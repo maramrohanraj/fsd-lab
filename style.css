@@ -1,59 +1,50 @@
 *{
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  background-color: #777
+}
+#container{
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
-body{
+#maindiv{
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: auto;
 }
 
-.container{
-  background-color: aqua;
-  padding: 10px;
+#topProgress{
+  position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.numbers,.operations{
-  padding: 10px;
-  margin: 5px;
-}
-
-.operations{
-  background-color: green;
-}
-
-.text{
-  padding: 2px;
-  font-size: 2em;
-  text-align: right;
+#leftProgress{
   position: absolute;
-  top: 10%;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
 }
 
-.keys{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-gap: 10px;
-  margin-top: 60px;
+#rightProgress{
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-button{
-  padding: 20px;
-  font-size: 1.5em;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-button:hover,button:active,#AC:hover,#DEL:hover{
-  background-color: lightskyblue;
-}
-#AC{
-  background-color: red;
-}
-#DEL{
-  background-color: yellow;
+#bottomProgress{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  right: 0;
 }

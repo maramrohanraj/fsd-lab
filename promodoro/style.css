@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column ;
+    position: relative;
+    top: 200px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 10%;
+}
+
+#start{
+    background-color: green;
+    padding: 10px 2px;
+    margin: 8px 8%;
+    border: none;
+    border-radius: 10px;
+}
+#sessionTime{
+    text-align: center;
+    color: green;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+#breakTime{
+    text-align: center;
+    color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+#start:hover,#stop:hover{
+    background-color: #1d7f98;
+}
+#stop{
+    background-color: red;
+    padding: 10px 2px;
+    margin: 8px 8%;
+    border: none;
+    border-radius: 10px;
+}
